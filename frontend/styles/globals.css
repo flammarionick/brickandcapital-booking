@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+  --brand-navy:#002A4A;
+  --brand-brick:#B22222;
+  --brand-cream:#F7F6F3;
+}
+body{ @apply bg-gray-50 text-gray-900; }
+h1,h2,h3{ @apply font-semibold; }
+a{ color: var(--brand-navy); }
+.container{ @apply max-w-6xl mx-auto px-4; }
+.btn{ @apply inline-flex items-center justify-center rounded-md px-4 py-2; }
+.btn-primary{ @apply text-white; background-color: var(--brand-navy); }
+.btn-primary:hover{ filter: brightness(0.95); }
+.navbar{ @apply sticky top-0 z-40 bg-white border-b border-gray-100; }
+.footer{ @apply bg-white border-t border-gray-100 text-sm; }
